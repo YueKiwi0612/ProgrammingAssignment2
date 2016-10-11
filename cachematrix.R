@@ -3,7 +3,7 @@
 
 ## Write a short comment describing this function
 
-
+## The function below creates a "matrix" object that can cache the inverse
 makeCacheMatrix <- function(x = matrix()){
         inv <- NULL
         set <- function(y){
@@ -17,6 +17,9 @@ makeCacheMatrix <- function(x = matrix()){
 }
 
 ## Write a short comment describing this function
+## This function computes the inverse of the "matrix" object created by makeCacheMatrix function above. 
+## If the inverse has been calculated before for the same matrix, then it should retrieve the calculated inverse from the cache
+
 cacheSolve <- fumction(x,...){
         inv <- x$getInverse()
         if(!is.null(inv)){
